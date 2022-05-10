@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intersection Observer</title>
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      box-sizing: border-box;
+      margin: 16px;
+      border: 2px solid black;
+      transition: opacity 243ms ease-in-out;
+      transition-delay: 200ms;
+    }
+
+    img[data-loaded=false] {
+      opacity: 0;
+    }
+
+    img[data-loaded=true] {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
+  <h1>Intersection Observer Overview</h1>
+  <main>
+    <img data-src="./assets/images/one.png" data-loaded="false" width="600" height="600" />
+    <img data-src="./assets/images/two.png" data-loaded="false" width="600" height="600" />
+    <img data-src="./assets/images/three.png" data-loaded="false" width="600" height="600" />
+    <img data-src="./assets/images/four.png" data-loaded="false" width="600" height="600" />
+    <img data-src="./assets/images/five.png" data-loaded="false" width="600" height="600" />
+    <img data-src="./assets/images/six.png" data-loaded="false" width="600" height="600" />
+    <img data-src="./assets/images/seven.png" data-loaded="false" width="600" height="600" />
+    <img data-src="./assets/images/eight.png" data-loaded="false" width="600" height="600" />
+    <img data-src="./assets/images/nine.png" data-loaded="false" width="600" height="600" />
+  </main>
   <script src="./assets/js/base.js"></script>
 </body>
 </html>
